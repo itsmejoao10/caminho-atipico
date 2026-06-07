@@ -449,14 +449,19 @@
       position: sticky;
       top: 40px;
     }
-    .authority-photo picture,
-    .authority-photo img {
+    .authority-photo picture {
       display: block;
       width: 100%;
       border-radius: 6px;
+      overflow: hidden;
       box-shadow: 0 20px 48px -20px rgba(42, 37, 32, 0.22);
-      object-fit: cover;
+    }
+    .authority-photo img {
+      display: block;
+      width: 100%;
+      height: auto;
       aspect-ratio: 4 / 3;
+      object-fit: cover;
       background: var(--bg-warm);
     }
     .authority-photo-placeholder {
@@ -629,13 +634,8 @@
         margin-top: 28px;
       }
       .authority-photo { position: static; }
-      .authority-photo img,
-      .authority-photo picture,
-      .authority-photo-placeholder {
-        aspect-ratio: 4 / 3;
-        max-height: 320px;
-        width: 100%;
-      }
+      .authority-photo picture { box-shadow: 0 10px 28px -14px rgba(42, 37, 32, 0.2); }
+      .authority-photo img { aspect-ratio: 4 / 3; width: 100%; }
       .cred-item { padding: 18px 0; gap: 14px; }
     }
 
@@ -753,7 +753,7 @@
   <!-- ============================================= -->
   <section class="story">
     <div class="narrow">
-      <h2 class="center reveal">Esse trabalho não nasceu no marketing. Nasceu no consultório.</h2>
+      <h2 class="center reveal">Esse Guia nasceu no Consultório.</h2>
 
       <div class="story-card reveal">
         <span class="quote-mark">"</span>
