@@ -405,7 +405,7 @@ box-shadow: 0 20px 48px -20px rgba(42, 37, 32, 0.22);
 .authority-photo img {
 display: block;
 width: 100%;
-height: 100%;
+height: auto;
 aspect-ratio: 3 / 4;
 object-fit: cover;
 object-position: center top;
@@ -559,8 +559,7 @@ gap: 28px;
 margin-top: 28px;
 }
 .authority-photo { position: static; }
-.authority-photo picture { box-shadow: 0 10px 28px -14px rgba(42, 37, 32, 0.2); }
-.authority-photo img { aspect-ratio: 4 / 3; width: 100%; height: auto; object-position: center center; }
+.authority-photo img { aspect-ratio: 4 / 3; object-position: center center; }
 .cred-item { padding: 18px 0; gap: 14px; }
 }
 @media (max-width: 400px) {
@@ -574,8 +573,6 @@ section { padding: 44px 16px; }
 .callout { padding: 18px 16px; }
 .price-big { font-size: 3.4rem; }
 .authority-split { gap: 20px; margin-top: 22px; }
-.authority-photo img,
-.authority-photo-placeholder { max-height: 260px; }
 }
 </style>
 </head>
