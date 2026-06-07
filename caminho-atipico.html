@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Caminho Atípico · Para Mães e Pais de Crianças Atípicas</title>
+  <meta name="description" content="O guia que reúne 10 anos de prática clínica com crianças atípicas no único material que a Nathiely Carvalho queria poder entregar na primeira consulta de cada família.">
+  <meta property="og:title" content="Caminho Atípico">
+  <meta property="og:description" content="Para mães e pais que querem ferramentas reais, não promessas de cura.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="[IMAGEM OG PLACEHOLDER]">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- META PIXEL CODE: o cliente vai colar aqui o snippet do Meta Pixel -->
+
+  <!-- GA4 CODE: o cliente vai colar aqui o snippet do Google Analytics 4 -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #FAF6F0;          /* fundo principal, bege quente claro */
+      --bg-warm: #F4ECDE;     /* fundo seções alternadas, bege médio */
+      --bg-card: #FFFFFF;     /* fundo de cards (autora, capítulos) */
+      --bg-dark: #2A2520;     /* fundo seção de preço (escuro) */
+      --text: #2A2520;        /* texto principal */
+      --text-soft: #5C544B;   /* texto secundário */
+      --text-muted: #8A8073;  /* texto terciário, legendas */
+      --accent: #8B4789;      /* destaque, lilás escuro */
+      --accent-soft: #A86BA6; /* lilás claro */
+      --gold: #B8884A;        /* dourado escuro */
+      --gold-soft: #D4B585;   /* dourado claro */
+      --line: #E5DCC9;        /* divisores e bordas */
+      --ornament: #C8956D;    /* cor dos ornamentos */
+      --max-read: 640px;      /* largura máxima de leitura */
+      --max-wide: 880px;      /* largura máxima de seções amplas */
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Manrope', system-ui, sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Ruído de papel sutil */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.4;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+    }
+
+    /* ---------- Tipografia base ---------- */
+    h1, h2, h3 { font-family: 'Fraunces', Georgia, serif; font-weight: 400; line-height: 1.15; }
+
+    h1 {
+      font-size: clamp(2.4rem, 6vw, 4.2rem);
+      font-variation-settings: "opsz" 144;
+      font-weight: 350;
+      line-height: 1.12;
+    }
+
+    h2 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 350;
+      line-height: 1.2;
+    }
+
+    h3 {
+      font-size: clamp(1.3rem, 2.6vw, 1.7rem);
+      font-weight: 500;
+    }
+
+    p { margin-bottom: 1.3em; color: var(--text-soft); }
+    p:last-child { margin-bottom: 0; }
+    strong { color: var(--text); font-weight: 600; }
+    em { font-style: italic; }
+
+    /* ---------- Layout ---------- */
+    section { padding: 76px 24px; }
+    .narrow { max-width: var(--max-read); margin: 0 auto; }
+    .wide { max-width: var(--max-wide); margin: 0 auto; }
+
+    .bg-warm { background: var(--bg-warm); }
+    .bg-dark { background: var(--bg-dark); }
+
+    /* ---------- Componentes ---------- */
+    .section-label {
+      font-family: 'Fraunces', serif;
+      font-style: italic;
+      font-weight: 400;
+      color: var(--ornament);
+      font-size: 1.05rem;
+      letter-spacing: 0.02em;
+      margin-bottom: 18px;
+    }
+    .section-label.center { text-align: center; }
+
+    .ornament {
+      text-align: center;
+      font-family: 'Fraunces', serif;
+      color: var(--ornament);
+      font-size: 1.3rem;
+      letter-spacing: 1.2em;
+      opacity: 0.7;
+      padding-bottom: 30px;
+      padding-left: 1.2em;
+    }
+
+    .center { text-align: center; }
+    .lead { font-size: 1.15rem; color: var(--text); }
+
+    /* ---------- Botões ---------- */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Manrope', sans-serif;
+      font-weight: 600;
+      font-size: 1.02rem;
+      text-decoration: none;
+      padding: 20px 42px;
+      border-radius: 4px;
+      background: var(--text);
+      color: var(--bg);
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .btn .arrow { transition: transform 0.3s ease; }
+    .btn:hover {
+      background: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px -10px rgba(139, 71, 137, 0.4);
+    }
+    .btn:hover .arrow { transform: translateX(4px); }
+
+    .btn-gold {
+      background: var(--gold-soft);
+      color: var(--text);
+    }
+    .btn-gold:hover {
+      background: var(--bg);
+      box-shadow: 0 12px 32px -10px rgba(0, 0, 0, 0.4);
+    }
+
+    /* ---------- Placeholder ---------- */
+    .placeholder {
+      background: rgba(184, 136, 74, 0.1);
+      padding: 2px 8px;
+      border-radius: 3px;
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    /* ---------- Reveal ---------- */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ======================================================= */
+    /* SEÇÃO 1 · HERO */
+    /* ======================================================= */
+    .hero {
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+      background: var(--bg);
+    }
+    .hero .narrow { width: 100%; }
+    .hero-tag {
+      font-family: 'Fraunces', serif;
+      font-style: italic;
+      color: var(--ornament);
+      font-size: 1rem;
+      margin-bottom: 32px;
+      max-width: 520px;
+    }
+    .hero h1 { margin-bottom: 36px; }
+    .hero h1 .line { display: block; }
+    .hero h1 em { color: var(--accent); font-style: italic; }
+    .hero-sub {
+      font-size: 1.12rem;
+      margin-bottom: 14px;
+      color: var(--text);
+    }
+    .hero-sub.secondary { color: var(--text-soft); margin-bottom: 40px; }
+
+    /* Hero staggered animation */
+    .hero .anim {
+      opacity: 0;
+      transform: translateY(28px);
+      animation: heroIn 0.9s ease forwards;
+    }
+    @keyframes heroIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .hero .d1 { animation-delay: 0.1s; }
+    .hero .d2 { animation-delay: 0.2s; }
+    .hero .d3 { animation-delay: 0.5s; }
+    .hero .d4 { animation-delay: 0.8s; }
+    .hero .d5 { animation-delay: 1.1s; }
+    .hero .d6 { animation-delay: 1.4s; }
+
+    /* Indicador de scroll */
+    .scroll-cue {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      width: fit-content;
+      margin: 28px auto 0;
+      text-decoration: none;
+      color: var(--text-muted);
+    }
+    .scroll-cue-text {
+      font-family: 'Fraunces', serif;
+      font-style: italic;
+      font-size: 0.95rem;
+      letter-spacing: 0.04em;
+      color: var(--ornament);
+    }
+    .scroll-cue-chevron {
+      width: 13px;
+      height: 13px;
+      border-right: 1.5px solid var(--ornament);
+      border-bottom: 1.5px solid var(--ornament);
+      transform: rotate(45deg);
+      animation: cueBounce 1.8s ease-in-out infinite;
+    }
+    @keyframes cueBounce {
+      0%, 100% { transform: rotate(45deg) translate(0, 0); opacity: 0.45; }
+      50%      { transform: rotate(45deg) translate(4px, 4px); opacity: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .scroll-cue-chevron { animation: none; opacity: 0.7; }
+    }
+
+    /* ======================================================= */
+    /* SEÇÃO 2 · ESPELHO */
+    /* ======================================================= */
+    .mirror-intro { font-size: 1.15rem; color: var(--text); margin-bottom: 40px; }
+    .mirror-list { list-style: none; }
+    .mirror-list li {
+      display: flex;
+      gap: 26px;
+      padding: 30px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .mirror-list li:last-child { border-bottom: none; }
+    .mirror-num {
+      flex-shrink: 0;
+      width: 46px;
+      height: 46px;
+      border: 1px solid var(--ornament);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Fraunces', serif;
+      font-style: italic;
+      color: var(--ornament);
+      font-size: 1.05rem;
+      letter-spacing: 0.02em;
+      background: rgba(200, 149, 109, 0.06);
+      transition: background 0.4s ease, color 0.4s ease;
+    }
+    .mirror-list li.visible .mirror-num {
+      background: var(--ornament);
+      color: var(--bg-card);
+    }
+    .mirror-text { color: var(--text-soft); padding-top: 8px; }
+
+    .callout {
+      background: var(--bg);
+      border-left: 3px solid var(--accent);
+      padding: 32px 32px;
+      margin-top: 34px;
+      font-family: 'Fraunces', serif;
+      font-style: italic;
+      color: var(--text);
+      font-size: 1.25rem;
+      line-height: 1.5;
+    }
+    .callout.on-warm { background: var(--bg-warm); }
+
+    /* ======================================================= */
+    /* SEÇÃO 3 · AS TRÊS DORES */
+    /* ======================================================= */
+    .pain-block { margin-top: 34px; }
+    .pain-block h3 { color: var(--accent); font-weight: 500; margin-bottom: 14px; }
+    .closing-strong {
+      margin-top: 32px;
+      font-size: 1.1rem;
+    }
+
+    /* ======================================================= */
+    /* SEÇÃO 5 · STORY + PRODUTO */
+    /* ======================================================= */
+    .story {
+      background: linear-gradient(180deg, var(--bg) 0%, var(--bg-warm) 100%);
+    }
+    .story-card {
+      background: var(--bg-card);
+      padding: 54px 50px;
+      border-radius: 6px;
+      box-shadow: 0 20px 50px -28px rgba(42, 37, 32, 0.18);
+      position: relative;
+      margin-top: 30px;
+    }
+    .story-card .quote-mark {
+      position: absolute;
+      top: 10px;
+      left: 26px;
+      font-family: 'Fraunces', serif;
+      font-size: 8rem;
+      line-height: 1;
+      opacity: 0.4;
+      color: var(--gold-soft);
+      pointer-events: none;
+    }
+    .story-card .content { position: relative; z-index: 1; }
+    .signature {
+      margin-top: 36px;
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+    }
+    .signature .name { font-family: 'Fraunces', serif; font-size: 1.3rem; color: var(--text); }
+    .signature .cred { font-size: 0.92rem; color: var(--text-muted); margin-top: 4px; }
+
+    /* ======================================================= */
+    /* SEÇÃO 6 · O QUE VOCÊ VAI DESCOBRIR */
+    /* ======================================================= */
+    .subtitle-center { color: var(--text-muted); text-align: center; margin: 18px auto 0; max-width: 600px; }
+    .discover-list { margin-top: 36px; display: flex; flex-direction: column; gap: 6px; }
+    .discover-card {
+      background: var(--bg-card);
+      padding: 32px 36px;
+      border-radius: 4px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 24px;
+      align-items: start;
+      border: 1px solid transparent;
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .discover-card:hover {
+      transform: translateX(4px);
+      border: 1px solid var(--line);
+      box-shadow: 0 14px 36px -22px rgba(42, 37, 32, 0.25);
+    }
+    .discover-num {
+      font-family: 'Fraunces', serif;
+      font-style: italic;
+      font-size: 2rem;
+      color: var(--ornament);
+      line-height: 1;
+    }
+    .discover-card h3 { font-size: 1.15rem; margin-bottom: 8px; color: var(--text); }
+    .discover-card p { font-size: 1rem; }
+
+    /* ======================================================= */
+    /* SEÇÃO 7 · PRA QUEM É */
+    /* ======================================================= */
+    .fit-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 36px;
+    }
+    .fit-card {
+      background: var(--bg-card);
+      padding: 40px 36px;
+      border-radius: 6px;
+      box-shadow: 0 14px 40px -28px rgba(42, 37, 32, 0.18);
+    }
+    .fit-card.yes { border-top: 3px solid var(--accent); }
+    .fit-card.no { border-top: 3px solid var(--text-muted); }
+    .fit-card h3 { font-style: italic; font-weight: 400; margin-bottom: 24px; }
+    .fit-card ul { list-style: none; }
+    .fit-card li {
+      padding: 12px 0;
+      display: flex;
+      gap: 14px;
+      color: var(--text-soft);
+      font-size: 1rem;
+      line-height: 1.55;
+    }
+    .fit-card li::before { flex-shrink: 0; font-weight: 700; }
+    .fit-card.yes li::before { content: "→"; color: var(--accent); }
+    .fit-card.no li::before { content: "×"; color: var(--text-muted); }
+
+    /* ======================================================= */
+    /* SEÇÃO 8 · AUTORIDADE */
+    /* ======================================================= */
+    .authority-card {
+      background: var(--bg-card);
+      padding: 50px 50px;
+      border-radius: 6px;
+      box-shadow: 0 18px 48px -28px rgba(42, 37, 32, 0.18);
+      margin-top: 30px;
+    }
+    .authority-card h3 { font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 400; margin-bottom: 28px; }
+    .authority-card p { margin-bottom: 1.3em; }
+
+    /* ======================================================= */
+    /* SEÇÃO 9 · A OFERTA (STACK) */
+    /* ======================================================= */
+    .stack { margin-top: 34px; }
+    .stack-card { padding: 36px 0; border-bottom: 1px solid var(--line); }
+    .stack-card .cat {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .stack-card .symbol { color: var(--accent); font-size: 1.2rem; }
+    .stack-card h3 { margin-bottom: 14px; font-weight: 500; font-size: 1.4rem; }
+    .stack-card .value { font-family: 'Fraunces', serif; font-style: italic; color: var(--text-muted); margin-top: 14px; }
+    .stack-card .value s { color: var(--text-soft); text-decoration-color: var(--ornament); text-decoration-thickness: 1px; }
+    .stack-total {
+      margin-top: 34px;
+      text-align: center;
+      font-family: 'Fraunces', serif;
+      font-size: 1.5rem;
+      color: var(--text);
+    }
+    .stack-total strong { font-weight: 500; }
+    .stack-total s { text-decoration-color: var(--accent); text-decoration-thickness: 1.5px; }
+
+    /* ======================================================= */
+    /* SEÇÃO 10 · O PREÇO */
+    /* ======================================================= */
+    .price {
+      background: var(--bg-dark);
+      color: var(--bg);
+      text-align: center;
+      padding: 90px 24px;
+    }
+    .price .inner { max-width: 540px; margin: 0 auto; }
+    .price .section-label { color: var(--gold-soft); }
+    .price h2 { color: var(--bg); margin-bottom: 32px; }
+    .price p { color: rgba(250, 246, 240, 0.85); }
+    .price strong { color: var(--bg); }
+    .price-big {
+      font-family: 'Fraunces', serif;
+      font-weight: 300;
+      font-size: clamp(3rem, 8vw, 5rem);
+      color: var(--gold-soft);
+      line-height: 1;
+      margin: 40px 0 10px;
+    }
+    .price-big .cur { font-size: 0.5em; vertical-align: middle; }
+    .price-big .cents { font-size: 0.6em; vertical-align: super; }
+    .price-installment { color: rgba(250, 246, 240, 0.7); margin-bottom: 36px; }
+    .price-compare { color: rgba(250, 246, 240, 0.85); margin-bottom: 14px; }
+    .price-compare strong { color: var(--gold-soft); }
+    .price-closing { margin: 36px 0 40px; font-size: 1.1rem; }
+    .price-cta-sub { color: rgba(250, 246, 240, 0.7); margin-top: 16px; font-size: 0.95rem; }
+    .guarantee {
+      margin-top: 56px;
+      padding-top: 40px;
+      border-top: 1px solid rgba(250, 246, 240, 0.18);
+      color: rgba(250, 246, 240, 0.7);
+      text-align: left;
+    }
+    .guarantee strong { color: var(--gold-soft); }
+    .guarantee p { color: rgba(250, 246, 240, 0.7); }
+
+    /* ======================================================= */
+    /* SEÇÃO 12 · PS / CARTA FINAL */
+    /* ======================================================= */
+    .ps { padding: 90px 24px; }
+    .ps h2 { font-style: italic; font-weight: 350; margin-bottom: 36px; }
+    .ps .signoff {
+      margin-top: 40px;
+      font-family: 'Fraunces', serif;
+      font-style: italic;
+      color: var(--accent);
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+    .ps .signoff strong { color: var(--accent); font-weight: 500; }
+    .ps .final-cta { text-align: center; margin-top: 48px; }
+
+    /* ======================================================= */
+    /* FOOTER */
+    /* ======================================================= */
+    footer {
+      background: var(--bg-warm);
+      padding: 50px 24px;
+      text-align: center;
+    }
+    footer p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    /* ======================================================= */
+    /* RESPONSIVO */
+    /* ======================================================= */
+    @media (max-width: 720px) {
+      section { padding: 54px 20px; }
+      .hero { min-height: auto; padding-top: 60px; padding-bottom: 52px; }
+      .price { padding: 64px 20px; }
+      .ps { padding: 64px 20px; }
+      .fit-grid { grid-template-columns: 1fr; gap: 16px; }
+      .story-card { padding: 40px 24px; }
+      .story-card .quote-mark { font-size: 5rem; top: 6px; left: 14px; }
+      .discover-card { padding: 22px 20px; gap: 14px; }
+      .authority-card { padding: 36px 24px; }
+      .fit-card { padding: 28px 22px; }
+      .callout { padding: 24px 20px; font-size: 1.1rem; }
+      .mirror-list li { gap: 16px; padding: 22px 0; }
+      .mirror-num { width: 40px; height: 40px; font-size: 0.95rem; }
+      .mirror-text { padding-top: 4px; }
+      .stack-card { padding: 28px 0; }
+      .price-big { margin: 28px 0 8px; }
+      .guarantee { margin-top: 40px; padding-top: 32px; }
+      .hero-tag { font-size: 0.92rem; margin-bottom: 22px; }
+      h2 { font-size: clamp(1.55rem, 5.5vw, 2.2rem); }
+      .hero h1 { font-size: clamp(2rem, 7.5vw, 3rem); }
+      .ps h2 { margin-bottom: 26px; }
+      .ps .final-cta { margin-top: 36px; }
+      .stack-total { font-size: 1.25rem; }
+    }
+
+    @media (max-width: 480px) {
+      body { font-size: 15.5px; }
+      section { padding: 46px 18px; }
+      .hero { padding-top: 52px; padding-bottom: 44px; }
+      .price { padding: 54px 18px; }
+      .ps { padding: 54px 18px; }
+      .btn { padding: 18px 26px; width: 100%; justify-content: center; font-size: 0.97rem; }
+      .discover-card { grid-template-columns: 1fr; gap: 6px; }
+      .discover-num { font-size: 1.5rem; }
+      .fit-card li { font-size: 0.95rem; }
+      .callout { padding: 20px 18px; font-size: 1.05rem; }
+      .story-card { padding: 36px 18px; }
+      .story-card .quote-mark { display: none; }
+      .authority-card { padding: 30px 18px; }
+      .mirror-list li { gap: 14px; }
+      .price-big { font-size: clamp(2.8rem, 14vw, 4.2rem); }
+      .guarantee { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================= -->
+  <!-- SEÇÃO 1 · HERO -->
+  <!-- ============================================= -->
+  <header class="hero">
+    <div class="narrow">
+      <p class="hero-tag anim d1">Para mães e pais de crianças atípicas. Recém-diagnosticadas, com suspeita, ou já no meio do caminho.</p>
+      <h1>
+        <span class="line anim d2">A maior dor de descobrir que o seu filho é atípico não é o <em>diagnóstico</em>.</span>
+        <span class="line anim d3">É olhar pra ele e ter medo do <em>futuro dele.</em></span>
+      </h1>
+      <p class="hero-sub anim d4">Ele vai falar? Vai estudar? Vai ter amigos? Vai conseguir trabalhar? Vai casar? Vai ter uma vida boa quando você não estiver mais aqui pra cuidar?</p>
+      <p class="hero-sub secondary anim d5">Essas são as perguntas que tiram seu sono toda noite. Eu sei. Eu ouço elas em consulta toda semana. E ninguém nunca te ensinou o que você precisa fazer <strong>hoje</strong> pra começar a responder cada uma delas. Eu vou te mostrar nas próximas linhas.</p>
+      <a href="#espelho" class="scroll-cue anim d6" aria-label="Rolar para continuar lendo">
+        <span class="scroll-cue-text">continua</span>
+        <span class="scroll-cue-chevron"></span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ============================================= -->
+  <!-- SEÇÃO 2 · ESPELHO -->
+  <!-- ============================================= -->
+  <section class="bg-warm" id="espelho">
+    <div class="narrow">
+      <p class="mirror-intro reveal">Eu vou descrever três cenas. Você vai me dizer, em silêncio, quantas viveu.</p>
+      <ul class="mirror-list">
+        <li class="reveal">
+          <span class="mirror-num">i.</span>
+          <span class="mirror-text">Última crise em público. Talvez no mercado, talvez no aniversário, talvez num restaurante. Você sentiu o calor subir no rosto antes mesmo de virar. Sabia o que vinha. E quando virou, ele já estava no chão. Ou gritando. Ou batendo a cabeça. E você fez aquilo que jurou que nunca faria: apertou o braço dele mais forte do que precisava. Não pra machucar. Pra fazer parar. Pra não ter que olhar mais pra cara de quem estava olhando. E na hora de dormir, você passou a mão naquele braço pequeno tentando apagar uma marca que nem existia. E chorou em silêncio pra não acordar ninguém.</span>
+        </li>
+        <li class="reveal">
+          <span class="mirror-num">ii.</span>
+          <span class="mirror-text">A mesinha. Você comprou aqueles materiais lindos. Letras, números, fichinhas, tudo colorido, tudo separado por categoria. Sentou com ele. Tirou foto pro story. Chamou ele com aquela voz doce que você ensaiou. Ele veio. Sentou. Em quinze segundos estava de pé. Você chamou de novo. Ele se jogou no chão. Você tentou com mais paciência. Ele virou de costas. Você sentiu lágrima vir e segurou porque ele tava olhando. E aí, calado, aquele pensamento veio. Aquele que você nunca disse em voz alta nem pra Deus: <em>"eu não sei ensinar meu próprio filho."</em></span>
+        </li>
+        <li class="reveal">
+          <span class="mirror-num">iii.</span>
+          <span class="mirror-text">A cozinha, depois das dez da noite. Ele finalmente dormiu. A casa em silêncio. Você foi pro outro cômodo, encostou na parede fria, e ficou olhando o nada. E pensou, sem nem se assustar mais: <em>"eu não tô ajudando esse menino. Eu tô atrapalhando. Talvez ele estivesse melhor com uma mãe que soubesse."</em></span>
+        </li>
+      </ul>
+      <div class="callout reveal">Se você reconheceu uma das três cenas, <strong>continua lendo</strong>. Porque o que vem a seguir é a coisa mais séria que você vai ler sobre o seu filho esse ano.</div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- SEÇÃO 3 · AS TRÊS DORES -->
+  <!-- ============================================= -->
+  <section>
+    <div class="narrow">
+      <h2 class="reveal">Existem três dores na vida de quem tem um filho atípico que doem de um jeito que outras pessoas não conseguem imaginar.</h2>
+
+      <div class="pain-block reveal">
+        <h3>A dor de não saber o que fazer na crise.</h3>
+        <p>Não é a crise em si. É os cinco, dez, vinte segundos em que ela começa e você tem que decidir alguma coisa. E nesses segundos, todo o conhecimento do mundo evapora. Você grita. Ameaça. Ignora. Implora. Você puxa o braço. Você fala alto pensando que vai resolver mais rápido. Você faz exatamente o oposto do que deveria fazer, porque ninguém nunca te ensinou o que deveria fazer. <strong>E o pior não é a crise. É a noite depois.</strong> É deitar e revisar cada segundo. É descobrir, lendo um post aleatório no Instagram às duas da manhã, que o que você fez piorou. E você fica deitada, no escuro, sentindo um aperto no peito que nenhum exame vai detectar.</p>
+      </div>
+
+      <div class="pain-block reveal">
+        <h3>A dor de não saber como ensinar seu filho.</h3>
+        <p>Você sai do consultório com a lista: <em>"trabalhe atenção em casa", "estimule a imitação", "ajude na linguagem", "treine a rotina"</em>. Lista que parece em outro idioma. Você abre o YouTube. Vê outras mães conseguindo. Compra material. Prepara. Senta. E ele não fica. Ele se joga. Ele grita. Ele te olha como se não te conhecesse. E você se sente, pela primeira vez na vida adulta, <strong>literalmente burra</strong>. Você que estudou, que sempre se virou, que sempre aprendeu o que precisava aprender, <strong>não sabe ensinar a pessoa que mais ama.</strong> E esse buraco específico, essa vergonha específica, ninguém na sua família entende. Porque os filhos deles aprendem sozinhos.</p>
+      </div>
+
+      <div class="pain-block reveal">
+        <h3>A dor de sentir que não tá ajudando.</h3>
+        <p>Os meses passam. As terapias passam. O calendário enche de consulta, laudo, relatório, atividade. E você olha pra trás e não tem certeza se algum dos seus esforços fez diferença. Você se pergunta se errou na escolha do profissional. Se errou no momento. Se errou em ter ignorado o sinal aos 18 meses. Se está errando agora mesmo, sem saber. E uma noite, mais cansada que o normal, vem aquele pensamento que te assusta tanto que você nem ousa repetir mentalmente: <em>"talvez ele estaria melhor com outra mãe. Uma que soubesse."</em></p>
+      </div>
+
+      <div class="callout on-warm reveal">
+        Eu já vi essa frase chegar em consulta. Já vi mãe chorar tentando dizer essa frase em voz alta pela primeira vez. E vou te dizer o que digo pra elas, olhando nos olhos:
+        <p style="margin-top: 1em; color: var(--text);"><strong>O problema não é você. O problema é que você está tentando construir uma vida pra esse filho com as mãos vazias. Ninguém te entregou as ferramentas. E sem ferramenta, nem amor constrói.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- SEÇÃO 4 · O INIMIGO -->
+  <!-- ============================================= -->
+  <section class="bg-warm">
+    <div class="narrow">
+      <h2 class="reveal">E enquanto você está nesse buraco, segurando o seu filho com as mãos vazias, existe uma indústria inteira lucrando exatamente com o seu desespero.</h2>
+      <div class="reveal" style="margin-top: 40px;">
+        <p>Você já viu eles. Os perfis com milhões de seguidores prometendo <strong>"reverter o autismo em 90 dias"</strong>. Os cursos de R$ 5.000, R$ 8.000, R$ 12.000 vendendo "método exclusivo" que <strong>nenhuma sociedade científica reconhece</strong>. Os "protocolos secretos" que custam o salário do mês de uma família comum. As terapias alternativas sem nenhuma base, vendidas em pacote, pra pais desesperados demais pra duvidar.</p>
+        <p>Sabe quem mais consome esse conteúdo no Brasil? <strong>Mães que acabaram de receber o diagnóstico do filho.</strong> E não é coincidência. Esse anúncio que apareceu pra você ontem? Foi calibrado. Esse perfil que o algoritmo te recomendou? Foi escolhido. Você foi <em>mapeada. Alvejada. Capturada.</em></p>
+        <p>Eles transformaram a dor da sua família em modelo de negócio. E só conseguem fazer isso porque o sistema sério também te abandonou primeiro. Consultas de quinze minutos. Planos de saúde que escondem cobertura obrigatória. Escolas que prometem inclusão e fazem o mínimo. <strong>Quando o sistema legítimo tem quinze minutos pra explicar uma vida inteira, sobra muito espaço pra quem grita mais alto na internet.</strong></p>
+        <p>Eu vejo o estrago disso no meu consultório toda semana. Família que perdeu três anos seguindo "tratamento" sem base. Mãe endividada em curso que não entregou nada. Criança que poderia ter recebido a intervenção certa muito antes.</p>
+        <p><strong>Eu construí o Caminho Atípico, em parte, porque estou cansada disso.</strong></p>
+      </div>
+      <div class="callout reveal">Você não foi ingênua. Você foi alvo.</div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- SEÇÃO 5 · STORY + PRODUTO -->
+  <!-- ============================================= -->
+  <section class="story">
+    <div class="narrow">
+      <h2 class="center reveal">Esse trabalho não nasceu no marketing. Nasceu no consultório.</h2>
+
+      <div class="story-card reveal">
+        <span class="quote-mark">"</span>
+        <div class="content">
+          <p>Eu sou a <strong>Nathiely Carvalho</strong>. Há <strong>10 anos</strong> atendo crianças atípicas. Mas não foi no consultório que aprendi o mais importante. Foi na ONG.</p>
+          <p>Eu trabalho num espaço dedicado <strong>exclusivamente a crianças autistas nível 2 e 3 de suporte.</strong> Aqueles níveis em que a criança não fala, ou fala pouco. Em que a crise é mais intensa, mais frequente, mais difícil de prever. <strong>Onde a maior parte dos profissionais não atende porque é difícil.</strong></p>
+          <p>Foi lá que aprendi três coisas que mudaram tudo.</p>
+          <p><strong>Primeira:</strong> nenhuma criança atípica é caso perdido. <strong>Nenhuma.</strong> As crianças mais difíceis que eu já atendi me ensinaram que existe caminho pra todas.</p>
+          <p><strong>Segunda:</strong> os pais são as terapeutas mais importantes da vida do filho. Mais do que eu. Mais do que qualquer profissional. Porque vocês estão com a criança 95% do tempo. <strong>Sem ferramenta nas suas mãos, nenhuma terapia compensa.</strong></p>
+          <p><strong>Terceira:</strong> as mães chegam, mês após mês, com as mesmas perguntas, as mesmas culpas, os mesmos cursos caros e inúteis no histórico. E quase nenhuma dessas respostas precisaria de uma consulta de R$ 400 pra ser entregue.</p>
+          <p>Foi aí que parei de só atender e construí o <strong>Caminho Atípico</strong>.</p>
+          <p>É o trabalho que reúne, em um único material, <strong>tudo o que eu queria poder entregar na primeira consulta de cada família que chega até mim.</strong> Não é livro acadêmico. Você não precisa ser psicóloga pra entender. Também não é autoajuda vazia: cada palavra está baseada em evidência clínica e em <strong>10 anos atendendo os casos mais difíceis do espectro.</strong></p>
+          <div class="signature">
+            <div class="name">Nathiely Carvalho</div>
+            <div class="cred">Psicóloga · 10 anos com crianças atípicas</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- SEÇÃO 6 · O QUE VOCÊ VAI DESCOBRIR -->
+  <!-- ============================================= -->
+  <section>
+    <div class="wide">
+      <h2 class="center reveal">O conhecimento que tá faltando na sua mão.</h2>
+      <p class="subtitle-center reveal">Cada um dos pontos abaixo responde a uma cena que você já viveu mais de uma vez. Aqui vai uma amostra do que vai estar na sua mão depois que você abrir o material.</p>
+
+      <div class="discover-list">
+        <div class="discover-card reveal">
+          <span class="discover-num">01</span>
+          <div>
+            <h3>O passo a passo de poucos segundos que reduz qualquer crise pela metade.</h3>
+            <p>E por que você está fazendo exatamente o oposto dele agora, sem saber.</p>
+          </div>
+        </div>
+        <div class="discover-card reveal">
+          <span class="discover-num">02</span>
+          <div>
+            <h3>Por que 9 em cada 10 "birras" da sua criança não são birra.</h3>
+            <p>E o que está realmente acontecendo dentro do cérebro dela enquanto você tenta resolver pelo lado errado.</p>
+          </div>
+        </div>
+        <div class="discover-card reveal">
+          <span class="discover-num">03</span>
+          <div>
+            <h3>O método de 3 passos pra ensinar qualquer habilidade pra criança neurodivergente em casa.</h3>
+            <p>O mesmo que eu uso na ONG, com crianças que nunca falaram uma palavra.</p>
+          </div>
+        </div>
+        <div class="discover-card reveal">
+          <span class="discover-num">04</span>
+          <div>
+            <h3>Os 4 pilares invisíveis que decidem quantas crises seu filho terá por semana.</h3>
+            <p>Quando os 4 estão funcionando em casa, a frequência cai sozinha, sem você fazer mais nada.</p>
+          </div>
+        </div>
+        <div class="discover-card reveal">
+          <span class="discover-num">05</span>
+          <div>
+            <h3>A ordem certa de buscar profissionais.</h3>
+            <p>E por que 80% das famílias começa errado, gasta o dobro e desiste em 6 meses.</p>
+          </div>
+        </div>
+        <div class="discover-card reveal">
+          <span class="discover-num">06</span>
+          <div>
+            <h3>Os 7 direitos legais que seu filho atípico tem e que ninguém te informou.</h3>
+            <p>Somados, podem representar mais de R$ 30 mil por ano na sua família.</p>
+          </div>
+        </div>
+        <div class="discover-card reveal">
+          <span class="discover-num">07</span>
+          <div>
+            <h3>O script de conversa com a escola antes do ano começar.</h3>
+            <p>E a resposta que você dá pra primeira desculpa que ela vai te dar pra não cumprir o que a lei manda.</p>
+          </div>
+        </div>
+        <div class="discover-card reveal">
+          <span class="discover-num">08</span>
+          <div>
+            <h3>A verdade sobre o futuro do seu filho.</h3>
+            <p>Sem promessa vazia, mas com os fatores reais que mais influenciam pra que aconteça o melhor possível.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- SEÇÃO 7 · PRA QUEM É (E PRA QUEM NÃO É) -->
+  <!-- ============================================= -->
+  <section class="bg-warm">
+    <div class="wide">
+      <h2 class="center reveal">Esse material não é pra todo mundo. E está tudo bem.</h2>
+
+      <div class="fit-grid">
+        <div class="fit-card yes reveal">
+          <h3>É pra você se:</h3>
+          <ul>
+            <li>Acabou de receber um diagnóstico e ainda não sabe qual é o próximo passo.</li>
+            <li>Suspeita de algo no seu filho e quer entender se é hora de buscar avaliação.</li>
+            <li>Está há tempos nessa caminhada e quer ferramentas práticas, não autoajuda vazia.</li>
+            <li>Quer informação confiável, baseada em ciência, mas escrita em linguagem humana.</li>
+            <li>Procura material para também passar para o outro pai, para os avós, para a família.</li>
+          </ul>
+        </div>
+        <div class="fit-card no reveal">
+          <h3>Não é pra você se:</h3>
+          <ul>
+            <li>Procura "cura" para autismo, TDAH ou outras condições. Não existe, e quem promete está mentindo.</li>
+            <li>Quer método mágico que resolve tudo em 21 dias.</li>
+            <li>Acredita que essas condições "não existem" e procura confirmação dessa visão.</li>
+            <li>Espera um guia que culpe a criança ou os pais pelo comportamento.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- SEÇÃO 8 · AUTORIDADE -->
+  <!-- ============================================= -->
+  <section>
+    <div class="narrow">
+      <h2 class="center reveal">Nathiely Carvalho</h2>
+
+      <div class="authority-card reveal">
+        <p>Psicóloga</p>
+        <p><strong>10 anos</strong> de experiência clínica com crianças atípicas.</p>
+        <p>Pós-graduação em <strong>Análise do Comportamento Aplicada aos Transtornos do Neurodesenvolvimento (ABA)</strong>. A abordagem com maior número de evidências científicas para o tratamento de crianças no espectro autista.</p>
+        <p><strong>Avaliadora certificada ABLLS e VB-MAPP.</strong> Dois dos instrumentos mais respeitados internacionalmente para avaliação de habilidades e linguagem em crianças com autismo.</p>
+        <p>Psicóloga em <strong>ONG dedicada exclusivamente a crianças autistas nível 2 e 3 de suporte.</strong> Os casos que exigem maior intervenção, onde a maior parte dos profissionais não atende.</p>
+        <p>Desenvolvedora do <strong>projeto de inclusão de crianças atípicas no ambiente de igreja.</strong> Levando acolhimento e estrutura adequada para um espaço onde, historicamente, essas famílias são as primeiras a se sentirem deslocadas.</p>
+        <p><strong>Palestrante e treinadora</strong>, formando profissionais e cuidadores que trabalham com crianças neurodivergentes em todo o país.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- SEÇÃO 9 · A OFERTA (STACK) -->
+  <!-- ============================================= -->
+  <section class="bg-warm">
+    <div class="narrow">
+      <h2 class="center reveal">Três materiais. Um pacote. Pra você ter autonomia real em casa.</h2>
+
+      <div class="stack">
+        <div class="stack-card reveal">
+          <div class="cat"><span class="symbol">▸</span> Material Principal · Caminho Atípico</div>
+          <p>O guia completo da Nathiely, organizado nas 7 etapas que seguem exatamente a jornada que você está vivendo. Da hora do diagnóstico até como pensar o futuro com honestidade. Acesso imediato no seu e-mail, lido em qualquer dispositivo.</p>
+          <p class="value">Valor: <s>R$ 197</s></p>
+        </div>
+        <div class="stack-card reveal">
+          <div class="cat"><span class="symbol">▸</span> Bônus 1 · Os Primeiros Comportamentos Pré-Acadêmicos a Serem Ensinados em Casa</div>
+          <p>A resposta pra pergunta que toda mãe atípica faz silenciosamente: <em>"o que eu posso ensinar pro meu filho <strong>antes</strong> dele aprender a ler?"</em></p>
+          <p>Aqui estão os comportamentos que precisam estar sólidos pra que qualquer aprendizado futuro aconteça. Contato visual funcional. Imitação. Atenção compartilhada. Pareamento. <strong>Esse é exatamente o material que eu uso na ONG com crianças que nunca falaram uma palavra. Se funciona com elas, funciona com o seu filho.</strong></p>
+          <p class="value">Valor: <s>R$ 67</s></p>
+        </div>
+        <div class="stack-card reveal">
+          <div class="cat"><span class="symbol">▸</span> Bônus 2 · Quadro de Rotinas Visual Pronto pra Imprimir</div>
+          <p>A ferramenta de bolso mais simples e mais subestimada pra <strong>reduzir crises de transição</strong> que existe.</p>
+          <p>Criança atípica não responde bem a mudança brusca. O quadro visual antecipa o dia, organiza a sequência, dá previsibilidade. Em algumas famílias, <strong>a frequência de crises cai pela metade só com a introdução desse recurso</strong>. Pronto pra você imprimir, plastificar e começar a usar <strong>ainda hoje</strong>.</p>
+          <p class="value">Valor: <s>R$ 47</s></p>
+        </div>
+      </div>
+      <p class="stack-total reveal"><strong>Valor total do pacote: <s>R$ 311</s></strong></p>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- SEÇÃO 10 · O PREÇO -->
+  <!-- ============================================= -->
+  <section class="price" id="preco">
+    <div class="inner">
+      <h2 class="reveal">O pacote completo, na sua mão hoje.</h2>
+      <div class="reveal">
+        <p>Uma única consulta com profissional especializado em criança atípica custa, em média, entre <strong>R$ 250 e R$ 500.</strong></p>
+        <p>O Caminho Atípico condensa, em um único pacote, o equivalente a horas de consulta somado a dois materiais de aplicação direta. O valor justo seria, no mínimo, <strong>R$ 311</strong>.</p>
+        <p>Mas eu não construí esse material pra chegar em poucas famílias. Construí pra chegar em quem precisa. E quem precisa nem sempre tem R$ 300 sobrando no fim do mês.</p>
+        <p>Por isso, hoje, você não investe R$ 311. Não investe R$ 197. Nem R$ 147. Nem R$ 97.</p>
+        <p>Hoje, você leva o pacote completo por:</p>
+      </div>
+
+      <div class="price-big reveal"><span class="cur">R$</span> 67</div>
+      <p class="price-installment reveal">à vista, ou parcelado no cartão</p>
+
+      <div class="reveal">
+        <p class="price-compare">Menos do que <strong>uma consulta avulsa.</strong></p>
+        <p class="price-compare">Menos do que <strong>a pizza de sábado à noite.</strong></p>
+        <p class="price-compare">Menos do que <strong>o uber até a próxima terapia do seu filho.</strong></p>
+      </div>
+
+      <p class="price-closing reveal">Por R$ 67 você leva pra dentro de casa <strong>o equivalente a 10 anos de prática clínica com crianças atípicas que nem todo profissional aceita atender.</strong></p>
+
+      <div class="reveal">
+        <a href="[LINK DE CHECKOUT]" class="btn btn-gold">Quero o Caminho Atípico por R$ 67 <span class="arrow">→</span></a>
+        <p class="price-cta-sub">Acesso imediato. Pagamento seguro.</p>
+      </div>
+
+      <div class="guarantee reveal">
+        <p><strong>Garantia ridícula de 7 dias.</strong></p>
+        <p>Você não precisa nem terminar de ler. Lê uma página. Lê duas. Se a primeira não te tocar, me escreve. Devolvo seu dinheiro até a última moeda. <strong>Sem questionário. Sem cara feia. Sem "pode me dar uma chance?".</strong></p>
+        <p>O risco é todo meu. Porque eu sei o que está dentro.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- SEÇÃO 12 · PS / CARTA FINAL -->
+  <!-- ============================================= -->
+  <section class="ps">
+    <div class="narrow">
+      <h2 class="reveal">P.S. Eu sei o que tá te segurando agora.</h2>
+      <div class="reveal">
+        <p>Não é R$ 67. R$ 67 você gasta sem pensar.</p>
+        <p>É o medo de que mais um material não funcione contigo. É a voz baixinha que diz <em>"comigo é diferente, comigo já tentei tudo, comigo nada pega."</em></p>
+        <p>Eu ouço essa voz toda semana, em consulta, na boca de mãe que já tentou de tudo.</p>
+        <p>Vou te perguntar uma coisa.</p>
+        <p>Se essa página fosse R$ 1.000, eu entenderia sua dúvida. Faria sentido pensar duas vezes, conversar com seu marido, esperar virar o mês. Mas é <strong>R$ 67</strong>. Menos que um almoço. E você tem <strong>7 dias</strong> pra ler e pedir o dinheiro de volta se não te tocar.</p>
+        <p>Então a pergunta não é se vale o risco. <strong>O risco não existe.</strong></p>
+        <p>A pergunta verdadeira é essa.</p>
+        <p>A próxima crise do seu filho vai acontecer. A próxima atividade que você tentar com ele vai acontecer. A próxima noite acordada vai acontecer. Você vai chegar nelas com as ferramentas vazias que tem hoje?</p>
+        <p>Ou com <strong>10 anos de prática clínica com crianças muito mais difíceis que o seu filho</strong> dentro da sua casa?</p>
+      </div>
+      <div class="signoff reveal">
+        Com carinho de quem entende,<br>
+        <strong>Nathiely Carvalho</strong>
+      </div>
+      <div class="final-cta reveal">
+        <a href="[LINK DE CHECKOUT]" class="btn">Quero começar agora por R$ 67 <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- FOOTER -->
+  <!-- ============================================= -->
+  <footer>
+    <p>Nathiely Carvalho · Todos os direitos reservados © 2026</p>
+    <p>Esse material não substitui acompanhamento profissional individualizado.</p>
+  </footer>
+
+  <script>
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('visible'); });
+        return;
+      }
+      var obs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+
+      els.forEach(function (el) { obs.observe(el); });
+    })();
+  </script>
+
+</body>
+</html>
