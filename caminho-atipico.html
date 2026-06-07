@@ -65,25 +65,31 @@
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
     }
 
-    /* ---------- Tipografia base ---------- */
-    h1, h2, h3 { font-family: 'Fraunces', Georgia, serif; font-weight: 400; line-height: 1.15; }
+    /* ---------- Tipografia base — mobile-first ---------- */
+    h1, h2, h3 { font-family: 'Fraunces', Georgia, serif; font-weight: 400; line-height: 1.18; }
 
     h1 {
-      font-size: clamp(2.4rem, 6vw, 4.2rem);
+      font-size: 1.95rem;
       font-variation-settings: "opsz" 144;
-      font-weight: 350;
-      line-height: 1.12;
-    }
-
-    h2 {
-      font-size: clamp(1.8rem, 4vw, 2.8rem);
       font-weight: 350;
       line-height: 1.2;
     }
 
+    h2 {
+      font-size: 1.55rem;
+      font-weight: 350;
+      line-height: 1.25;
+    }
+
     h3 {
-      font-size: clamp(1.3rem, 2.6vw, 1.7rem);
+      font-size: 1.2rem;
       font-weight: 500;
+    }
+
+    @media (min-width: 720px) {
+      h1 { font-size: clamp(2.6rem, 4.5vw, 4rem); line-height: 1.12; }
+      h2 { font-size: clamp(1.9rem, 3.2vw, 2.8rem); }
+      h3 { font-size: clamp(1.3rem, 1.8vw, 1.65rem); }
     }
 
     p { margin-bottom: 1.3em; color: var(--text-soft); }
@@ -180,29 +186,50 @@
     /* SEÇÃO 1 · HERO */
     /* ======================================================= */
     .hero {
-      min-height: 88vh;
+      min-height: 100svh;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       background: var(--bg);
+      padding: 52px 22px 56px;
     }
     .hero .narrow { width: 100%; }
     .hero-tag {
       font-family: 'Fraunces', serif;
       font-style: italic;
       color: var(--ornament);
-      font-size: 1rem;
-      margin-bottom: 32px;
-      max-width: 520px;
+      font-size: 0.88rem;
+      line-height: 1.55;
+      margin-bottom: 22px;
+      max-width: 440px;
     }
-    .hero h1 { margin-bottom: 36px; }
+    .hero h1 {
+      margin-bottom: 26px;
+      letter-spacing: -0.01em;
+    }
     .hero h1 .line { display: block; }
     .hero h1 em { color: var(--accent); font-style: italic; }
     .hero-sub {
-      font-size: 1.12rem;
-      margin-bottom: 14px;
+      font-size: 1rem;
+      line-height: 1.65;
+      margin-bottom: 12px;
       color: var(--text);
     }
-    .hero-sub.secondary { color: var(--text-soft); margin-bottom: 40px; }
+    .hero-sub.secondary {
+      color: var(--text-soft);
+      font-size: 0.97rem;
+      margin-bottom: 32px;
+    }
+    @media (min-width: 720px) {
+      .hero {
+        min-height: 88vh;
+        align-items: center;
+        padding: 0 24px;
+      }
+      .hero-tag { font-size: 1rem; margin-bottom: 30px; }
+      .hero h1 { margin-bottom: 32px; }
+      .hero-sub { font-size: 1.1rem; }
+      .hero-sub.secondary { font-size: 1.05rem; margin-bottom: 40px; }
+    }
 
     /* Hero staggered animation */
     .hero .anim {
@@ -523,49 +550,49 @@
     /* ======================================================= */
     /* RESPONSIVO */
     /* ======================================================= */
+    /* ---- Mobile (até 720px) ---- */
     @media (max-width: 720px) {
-      section { padding: 54px 20px; }
-      .hero { min-height: auto; padding-top: 60px; padding-bottom: 52px; }
-      .price { padding: 64px 20px; }
-      .ps { padding: 64px 20px; }
-      .fit-grid { grid-template-columns: 1fr; gap: 16px; }
-      .story-card { padding: 40px 24px; }
-      .story-card .quote-mark { font-size: 5rem; top: 6px; left: 14px; }
-      .discover-card { padding: 22px 20px; gap: 14px; }
-      .authority-card { padding: 36px 24px; }
-      .fit-card { padding: 28px 22px; }
-      .callout { padding: 24px 20px; font-size: 1.1rem; }
-      .mirror-list li { gap: 16px; padding: 22px 0; }
-      .mirror-num { width: 40px; height: 40px; font-size: 0.95rem; }
-      .mirror-text { padding-top: 4px; }
-      .stack-card { padding: 28px 0; }
-      .price-big { margin: 28px 0 8px; }
-      .guarantee { margin-top: 40px; padding-top: 32px; }
-      .hero-tag { font-size: 0.92rem; margin-bottom: 22px; }
-      h2 { font-size: clamp(1.55rem, 5.5vw, 2.2rem); }
-      .hero h1 { font-size: clamp(2rem, 7.5vw, 3rem); }
-      .ps h2 { margin-bottom: 26px; }
-      .ps .final-cta { margin-top: 36px; }
-      .stack-total { font-size: 1.25rem; }
+      section { padding: 50px 20px; }
+      .price { padding: 60px 20px; }
+      .ps { padding: 60px 20px; }
+      .fit-grid { grid-template-columns: 1fr; gap: 14px; }
+      .story-card { padding: 36px 22px; }
+      .story-card .quote-mark { font-size: 4.5rem; top: 4px; left: 12px; opacity: 0.3; }
+      .discover-card { padding: 20px 18px; gap: 14px; }
+      .authority-card { padding: 32px 22px; }
+      .fit-card { padding: 26px 20px; }
+      .callout { padding: 22px 18px; font-size: 1.05rem; }
+      .mirror-list li { gap: 14px; padding: 20px 0; }
+      .mirror-num { width: 38px; height: 38px; font-size: 0.9rem; }
+      .mirror-text { padding-top: 2px; font-size: 0.97rem; }
+      .stack-card { padding: 24px 0; }
+      .stack-total { font-size: 1.2rem; margin-top: 26px; }
+      .price-big { margin: 24px 0 8px; }
+      .guarantee { margin-top: 36px; padding-top: 28px; }
+      .ps h2 { margin-bottom: 22px; }
+      .ps .final-cta { margin-top: 32px; }
+      .subtitle-center { font-size: 0.95rem; }
+      .discover-num { font-size: 1.7rem; }
+      .discover-card h3 { font-size: 1.05rem; }
+      .discover-card p { font-size: 0.93rem; }
+      .fit-card li { font-size: 0.94rem; }
+      .signature .name { font-size: 1.1rem; }
+      .price-installment { font-size: 0.92rem; }
+      .price-compare { font-size: 0.95rem; }
     }
 
-    @media (max-width: 480px) {
-      body { font-size: 15.5px; }
-      section { padding: 46px 18px; }
-      .hero { padding-top: 52px; padding-bottom: 44px; }
-      .price { padding: 54px 18px; }
-      .ps { padding: 54px 18px; }
-      .btn { padding: 18px 26px; width: 100%; justify-content: center; font-size: 0.97rem; }
-      .discover-card { grid-template-columns: 1fr; gap: 6px; }
-      .discover-num { font-size: 1.5rem; }
-      .fit-card li { font-size: 0.95rem; }
-      .callout { padding: 20px 18px; font-size: 1.05rem; }
-      .story-card { padding: 36px 18px; }
+    /* ---- Telas muito pequenas (até 400px) ---- */
+    @media (max-width: 400px) {
+      section { padding: 44px 16px; }
+      .price { padding: 52px 16px; }
+      .ps { padding: 52px 16px; }
+      .btn { width: 100%; justify-content: center; font-size: 0.95rem; padding: 17px 20px; }
+      .discover-card { grid-template-columns: 1fr; gap: 4px; }
+      .story-card { padding: 30px 16px; }
       .story-card .quote-mark { display: none; }
-      .authority-card { padding: 30px 18px; }
-      .mirror-list li { gap: 14px; }
-      .price-big { font-size: clamp(2.8rem, 14vw, 4.2rem); }
-      .guarantee { text-align: left; }
+      .authority-card { padding: 26px 16px; }
+      .callout { padding: 18px 16px; }
+      .price-big { font-size: 3.4rem; }
     }
   </style>
 </head>
