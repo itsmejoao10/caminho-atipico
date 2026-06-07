@@ -459,9 +459,10 @@
     .authority-photo img {
       display: block;
       width: 100%;
-      height: auto;
-      aspect-ratio: 4 / 3;
+      height: 100%;
+      aspect-ratio: 3 / 4;
       object-fit: cover;
+      object-position: center top;
       background: var(--bg-warm);
     }
     .authority-photo-placeholder {
@@ -635,7 +636,7 @@
       }
       .authority-photo { position: static; }
       .authority-photo picture { box-shadow: 0 10px 28px -14px rgba(42, 37, 32, 0.2); }
-      .authority-photo img { aspect-ratio: 4 / 3; width: 100%; }
+      .authority-photo img { aspect-ratio: 4 / 3; width: 100%; height: auto; object-position: center center; }
       .cred-item { padding: 18px 0; gap: 14px; }
     }
 
