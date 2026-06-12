@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caminho Atípico · O mapa que ninguém te deu depois do diagnóstico</title>
+<meta name="description" content="O guia da psicóloga Nathiely Carvalho com o primeiro passo que toda mãe deveria receber junto com o diagnóstico. Autismo, TDAH, dislexia e TOD.">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;j.src="https://gtm.nathielycarvalho.com/bpvvczqesbl.js?"+i;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','1b=BQZOIiU3TiYiUTgtOi1VUBpfQUtAXAcYUQwSERkTBhoVARIXBxsPHgNMEAoc');</script>
+<!-- End Google Tag Manager -->
+<!-- META PIXEL: cole o snippet do Meta Pixel aqui -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FAF6F0;--bg-warm:#F4ECDE;--bg-card:#FFFFFF;--bg-dark:#2A2520;
+  --text:#2A2520;--text-soft:#5C544B;--muted:#8A8073;
+  --accent:#8B4789;--gold:#B8884A;--gold-soft:#D4B585;--line:#E5DCC9;
+  --action:#1F8A5B;--action-dark:#176B47;--alert:#B23A48;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',system-ui,sans-serif;background:var(--bg);color:var(--text);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.wrap{max-width:640px;margin:0 auto;padding:0 20px}
+.wide{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:64px 0}
+@media(max-width:720px){section{padding:48px 0}body{font-size:16px}}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:400;line-height:1.12}
+h1{font-size:clamp(2rem,5.4vw,3.1rem)}
+h2{font-size:clamp(1.6rem,4.2vw,2.4rem)}
+em,.it{font-style:italic}
+.accent{color:var(--accent)}
+strong{font-weight:700}
+p{margin:0 0 1em}
+.bg-warm{background:var(--bg-warm)}
+.bg-dark{background:var(--bg-dark);color:var(--bg)}
+.center{text-align:center}
+.label{font-family:'Fraunces',serif;font-style:italic;color:var(--gold);font-size:.95rem}
+
+/* CTA */
+.cta{display:inline-flex;align-items:center;justify-content:center;gap:.5em;font-family:'Manrope',sans-serif;font-weight:800;font-size:1.1rem;text-decoration:none;cursor:pointer;border:none;background:var(--action);color:#fff;padding:20px 30px;border-radius:10px;box-shadow:0 10px 26px -10px rgba(31,138,91,.55);transition:.18s;width:100%;text-align:center;line-height:1.2;text-transform:uppercase;letter-spacing:.01em}
+.cta:hover{background:var(--action-dark);transform:translateY(-2px)}
+.cta small{display:block;font-weight:600;font-size:.72rem;text-transform:none;letter-spacing:0;opacity:.92;margin-top:3px}
+.cta-note{font-size:.84rem;color:var(--muted);margin-top:10px;text-align:center}
+.bg-dark .cta-note{color:rgba(250,246,240,.7)}
+
+/* urgency bar */
+.urg{background:var(--bg-dark);color:var(--gold-soft);text-align:center;font-size:.86rem;font-weight:700;padding:9px 14px;letter-spacing:.02em}
+
+/* hero */
+.hero{padding:40px 0 56px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr;gap:30px}}
+.eyebrow{display:inline-block;background:rgba(139,71,137,.1);color:var(--accent);font-weight:700;font-size:.8rem;padding:6px 14px;border-radius:20px;margin-bottom:18px;letter-spacing:.01em}
+.hero h1{margin-bottom:18px}
+.hero .sub{font-size:1.08rem;color:var(--text-soft);margin-bottom:24px}
+.pricebox{background:var(--bg-card);border:1px solid var(--line);border-radius:14px;padding:24px;box-shadow:0 14px 40px -22px rgba(42,37,32,.45)}
+.pricebox .from{color:var(--muted);text-decoration:line-through;font-size:1rem}
+.pricebox .now{font-family:'Fraunces',serif;font-size:2.6rem;color:var(--text);line-height:1;margin:2px 0 2px}
+.pricebox .now b{color:var(--accent);font-weight:500}
+.pricebox .install{font-size:.92rem;color:var(--text-soft);margin-bottom:16px}
+.trustline{display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:center;margin-top:14px;font-size:.82rem;color:var(--muted)}
+.trustline span{display:inline-flex;align-items:center;gap:.35em}
+
+/* mockup placeholder */
+.mockup{position:relative;display:flex;align-items:center;justify-content:center;min-height:330px}
+.book{width:230px;aspect-ratio:3/4.1;background:linear-gradient(145deg,#6E3A6B,#8B4789);border-radius:6px 12px 12px 6px;box-shadow:0 30px 60px -24px rgba(42,37,32,.6),inset 8px 0 0 rgba(0,0,0,.18);padding:30px 24px;display:flex;flex-direction:column;justify-content:space-between;color:#FAF6F0;transform:rotate(-3deg)}
+.book .bk-top{font-family:'Fraunces',serif;font-style:italic;color:var(--gold-soft);font-size:.8rem}
+.book .bk-title{font-family:'Fraunces',serif;font-size:1.9rem;line-height:1.05}
+.book .bk-sub{font-size:.78rem;opacity:.85}
+.ph-note{position:absolute;bottom:-6px;font-size:.72rem;color:var(--gold);background:rgba(184,136,74,.12);border:1px dashed var(--gold);padding:2px 8px;border-radius:4px}
+.badges-mini{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+.bmini{background:var(--bg-warm);border:1px solid var(--line);border-radius:8px;padding:6px 11px;font-size:.74rem;font-weight:700;color:var(--text-soft)}
+
+/* proof strip */
+.proof{background:var(--bg-warm);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:26px 0}
+.stars{color:var(--gold);letter-spacing:2px}
+.creds{display:flex;flex-wrap:wrap;gap:8px 10px;justify-content:center;margin-top:12px}
+.cred{background:#fff;border:1px solid var(--line);border-radius:20px;padding:7px 14px;font-size:.8rem;font-weight:600;color:var(--text-soft)}
+
+/* scenes / dores */
+.scene{padding:20px 0;border-bottom:1px solid var(--line)}
+.scene:last-of-type{border-bottom:none}
+.scene .num{font-family:'Fraunces',serif;font-style:italic;color:var(--gold);font-size:1.4rem;float:left;margin-right:12px}
+.qbox{background:var(--bg);border-left:3px solid var(--accent);padding:24px;margin-top:22px;font-family:'Fraunces',serif;font-style:italic;font-size:1.18rem}
+.bg-warm .qbox{background:var(--bg-warm)}
+.dor{margin-bottom:26px}
+.dor h3{color:var(--accent);font-style:italic;font-weight:500;margin-bottom:8px;font-size:1.3rem}
+.closing{background:var(--bg-warm);border-left:3px solid var(--accent);padding:24px;margin-top:14px}
+.punch{font-family:'Fraunces',serif;font-style:italic;font-size:clamp(1.4rem,3.6vw,1.9rem);text-align:center;color:var(--accent);padding-top:24px}
+
+/* bullets */
+.blist{margin-top:18px}
+.brow{display:flex;gap:14px;background:var(--bg-card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin-bottom:10px}
+.brow .ck{color:var(--action);font-weight:800;font-size:1.2rem;flex:none;line-height:1.4}
+.brow b{font-weight:700}
+.brow span{font-size:.97rem;color:var(--text-soft)}
+
+/* gift */
+.gift{background:var(--bg-card);border:1px solid var(--line);border-left:4px solid var(--action);border-radius:10px;padding:26px;margin-top:24px;box-shadow:0 8px 26px -18px rgba(42,37,32,.4)}
+.gift .tag{display:inline-block;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--action);font-weight:800;margin-bottom:8px}
+.gift .kick{font-family:'Fraunces',serif;font-style:italic;color:var(--accent);margin:0}
+
+/* stack */
+.stack{background:var(--bg-card);border:1px solid var(--line);border-radius:14px;padding:30px;box-shadow:0 14px 40px -26px rgba(42,37,32,.4)}
+.sitem{display:flex;justify-content:space-between;gap:16px;padding:18px 0;border-bottom:1px dashed var(--line)}
+.sitem .scat{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:800}
+.sitem h3{font-size:1.12rem;margin:3px 0 4px}
+.sitem p{font-size:.92rem;color:var(--text-soft);margin:0}
+.sitem .sval{font-weight:700;color:var(--text-soft);white-space:nowrap}
+.stotal{display:flex;justify-content:space-between;align-items:center;padding-top:18px;font-family:'Fraunces',serif;font-size:1.2rem}
+.stotal s{color:var(--muted)}
+
+/* price section dark */
+.price-num{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(3rem,11vw,4.8rem);color:var(--gold-soft);line-height:1;text-align:center}
+.compare{text-align:center;font-family:'Fraunces',serif;font-style:italic;font-size:1.05rem;color:rgba(250,246,240,.9);margin:6px 0}
+.seals{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:20px 0 6px}
+.seal{display:inline-flex;align-items:center;gap:.4em;background:rgba(250,246,240,.08);border:1px solid rgba(250,246,240,.16);border-radius:8px;padding:9px 13px;font-size:.8rem;font-weight:700;color:rgba(250,246,240,.92)}
+.guarantee{border-top:1px solid rgba(250,246,240,.18);margin-top:26px;padding-top:24px;color:rgba(250,246,240,.78);font-size:.95rem}
+.guarantee b{color:var(--gold-soft)}
+
+/* author */
+.author{background:var(--bg-card);border-radius:14px;padding:34px;box-shadow:0 14px 40px -26px rgba(42,37,32,.45)}
+.author img{width:150px;height:150px;border-radius:50%;object-fit:cover;object-position:center top;float:left;margin:0 22px 10px 0;border:4px solid #fff;box-shadow:0 10px 26px -14px rgba(42,37,32,.5)}
+@media(max-width:520px){.author img{float:none;display:block;margin:0 auto 18px}}
+
+/* testimonials */
+.tcard{background:var(--bg-card);border:1px solid var(--line);border-radius:12px;padding:26px;box-shadow:0 8px 26px -18px rgba(42,37,32,.4)}
+.tcard p{font-size:.98rem;color:var(--text-soft)}
+.tcard .who{font-weight:700;border-top:1px solid var(--line);padding-top:12px;margin-top:6px}
+.tcard .who small{display:block;font-weight:400;color:var(--muted)}
+
+/* faq */
+.faq details{background:var(--bg-card);border:1px solid var(--line);border-radius:10px;margin-bottom:10px}
+.faq summary{cursor:pointer;list-style:none;padding:18px 20px;font-weight:700;display:flex;justify-content:space-between;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:'Fraunces',serif;color:var(--accent);font-size:1.5rem;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq .ans{padding:0 20px 18px;color:var(--text-soft);font-size:.95rem}
+
+/* sticky */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(255,255,255,.97);backdrop-filter:blur(6px);border-top:1px solid var(--line);padding:10px 14px;display:none;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 -8px 24px -16px rgba(42,37,32,.5)}
+.sticky .sp{font-size:.8rem;line-height:1.15}
+.sticky .sp b{font-family:'Fraunces',serif;font-size:1.2rem;color:var(--accent)}
+.sticky .sp s{color:var(--muted);font-size:.74rem}
+.sticky .cta{width:auto;padding:13px 20px;font-size:.92rem;white-space:nowrap}
+.sticky.show{display:flex}
+@media(min-width:721px){.sticky{display:none!important}}
+
+.ctablock{margin-top:26px}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<div class="urg">🔥 OFERTA DE LANÇAMENTO · as primeiras 100 famílias levam por R$ 47 (9x de R$ 6,17) · acesso imediato</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wide">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">Para mães e pais de crianças recém-diagnosticadas</span>
+        <h1>Te deram o diagnóstico do seu filho. Mas ninguém te deu o <em class="accent">mapa</em> do que fazer agora.</h1>
+        <p class="sub">O <strong>Caminho Atípico</strong> reúne, num material só, o primeiro passo que toda mãe deveria receber na primeira consulta. Da hora do diagnóstico até como pensar o futuro. Para autismo, TDAH, dislexia e TOD.</p>
+        <div class="pricebox">
+          <div class="from">De R$ 311 por:</div>
+          <div class="now">9x de <b>R$ 6,17</b></div>
+          <div class="install">ou <strong>R$ 47</strong> à vista · acesso imediato no seu e-mail</div>
+          <a href="https://checkout.ticto.app/O7000855D" class="cta">Quero o Caminho Atípico <small>Acesso imediato · Garantia de 7 dias</small></a>
+          <div class="trustline">
+            <span>🔒 Compra segura</span><span>⚡ Acesso imediato</span><span>↩️ Garantia 7 dias</span>
+          </div>
+        </div>
+      </div>
+      <div class="mockup">
+        <img src="mockup-conjunto.png" alt="Guia Caminho Atípico mais 2 bônus" style="width:100%;max-width:470px;height:auto;filter:drop-shadow(0 22px 40px rgba(42,37,32,.3))">
+      </div>
+    </div>
+    <div class="badges-mini">
+      <span class="bmini">📘 Guia completo</span><span class="bmini">🎁 + 2 bônus</span><span class="bmini">📱 Lê no celular</span><span class="bmini">🧠 Base científica (ABA)</span>
+    </div>
+  </div>
+</header>
+
+<!-- PROVA / AUTORIDADE -->
+<div class="proof">
+  <div class="wrap center">
+    <div class="stars">★★★★★</div>
+    <p style="font-family:'Fraunces',serif;font-style:italic;font-size:1.12rem;margin:8px 0 4px">“Minha filha superou seus medos e venceu desafios. Hoje é uma menina forte e determinada.”</p>
+    <p style="font-size:.86rem;color:var(--muted);margin:0">Ana Tereza, mãe · sobre o acompanhamento da Nathiely</p>
+    <div class="creds">
+      <span class="cred">Psicóloga · 10 anos com crianças atípicas</span>
+      <span class="cred">Pós em ABA</span>
+      <span class="cred">Avaliadora ABLLS e VB-MAPP</span>
+    </div>
+  </div>
+</div>
+
+<!-- ESPELHO -->
+<section>
+  <div class="wrap">
+    <p class="center" style="font-family:'Fraunces',serif;font-style:italic;font-size:1.18rem">Eu vou descrever três cenas. Você me diz, em silêncio, quantas viveu.</p>
+    <div class="scene reveal"><span class="num">i.</span><p>A última crise em público. No mercado, no aniversário, num restaurante. Você sentiu o calor subir no rosto antes de virar. E quando virou, ele já estava no chão. Ou gritando. Ou batendo a cabeça. E você fez o que jurou que nunca faria: apertou o braço dele mais forte do que precisava. Pra fazer parar. E à noite, passou a mão naquele braço pequeno tentando apagar uma marca que nem existia. E chorou em silêncio.</p></div>
+    <div class="scene reveal"><span class="num">ii.</span><p>A mesinha. Você comprou os materiais lindos, sentou com ele, chamou com a voz doce que ensaiou. Ele veio. Em quinze segundos estava de pé. Você tentou com mais paciência. Ele virou de costas. E aí, calada, veio aquele pensamento que você nunca disse em voz alta nem pra Deus: <em>“eu não sei ensinar meu próprio filho.”</em></p></div>
+    <div class="scene reveal"><span class="num">iii.</span><p>A cozinha, depois das dez. Ele finalmente dormiu. Você encostou na parede fria e ficou olhando o nada. E pensou, sem nem se assustar mais: <em>“eu não tô ajudando esse menino. Talvez ele estivesse melhor com uma mãe que soubesse.”</em></p></div>
+    <div class="qbox reveal">Se você reconheceu uma das três cenas, <strong>continua lendo</strong>. Porque o que vem a seguir é a coisa mais séria que você vai ler sobre o seu filho esse ano.</div>
+  </div>
+</section>
+
+<!-- AS DORES -->
+<section class="bg-warm">
+  <div class="wrap">
+    <p class="label center reveal">o problema real</p>
+    <h2 class="center reveal" style="margin:8px 0 26px">Existem dores que doem de um jeito que os outros não conseguem nem imaginar.</h2>
+    <div class="dor reveal"><h3>Não saber o que fazer na crise.</h3><p>Não é a crise. É os segundos em que ela começa e você tem que decidir alguma coisa, e todo o conhecimento do mundo evapora. Você grita, ameaça, implora, puxa o braço. Faz o oposto do que deveria, porque ninguém te ensinou o que deveria. <strong>E o pior não é a crise. É a noite depois</strong>, revisando cada segundo, descobrindo num post às duas da manhã que o que você fez piorou.</p></div>
+    <div class="dor reveal"><h3>Não saber como ensinar seu filho.</h3><p>Você sai do consultório com uma lista que parece outro idioma. Abre o YouTube, vê outras mães conseguindo, compra material, senta. E ele não fica. E você se sente, pela primeira vez na vida adulta, <strong>literalmente burra</strong>. Você, que sempre aprendeu o que precisou, não sabe ensinar a pessoa que mais ama.</p></div>
+    <div class="dor reveal"><h3>Sentir que não tá ajudando.</h3><p>Os meses passam, as terapias passam, e você não tem certeza se algum esforço fez diferença. E numa noite mais cansada, vem aquele pensamento que te assusta tanto que você nem ousa repetir.</p></div>
+    <div class="closing reveal"><p style="margin:0"><strong>O problema não é você. É que você está tentando construir uma vida pra esse filho com as mãos vazias. Ninguém te entregou as ferramentas. E sem ferramenta, nem amor constrói.</strong></p></div>
+  </div>
+</section>
+
+<!-- O INIMIGO -->
+<section>
+  <div class="wrap">
+    <h2 class="reveal" style="margin-bottom:18px">Enquanto você está nesse buraco, existe uma indústria inteira lucrando com o seu desespero.</h2>
+    <div class="reveal">
+      <p>Você já viu os perfis prometendo <strong>“reverter o autismo em 90 dias”</strong>. Os cursos de R$5.000, R$8.000, R$12.000 vendendo “método exclusivo” que <strong>nenhuma sociedade científica reconhece</strong>. Os “protocolos secretos” que custam o salário do mês de uma família comum.</p>
+      <p>Aquele anúncio que apareceu pra você ontem? Foi calibrado. Você foi mapeada. Alvejada. Capturada. Eles transformaram a dor da sua família em modelo de negócio.</p>
+      <p style="margin:0"><strong>Eu construí o Caminho Atípico, em parte, porque estou cansada disso.</strong></p>
+    </div>
+    <p class="punch reveal">Você não foi ingênua. Você foi alvo.</p>
+  </div>
+</section>
+
+<!-- O QUE VOCÊ VAI DESCOBRIR -->
+<section class="bg-warm">
+  <div class="wrap">
+    <p class="label center reveal">o que tem dentro</p>
+    <h2 class="center reveal" style="margin:8px 0 6px">O conhecimento que tá faltando na sua mão.</h2>
+    <p class="center reveal" style="color:var(--muted);margin-bottom:8px">Um guia que percorre autismo, TDAH, dislexia e TOD, do diagnóstico ao futuro.</p>
+    <div class="blist">
+      <div class="brow reveal"><span class="ck">✓</span><span><b>Os erros que quase todo pai comete na crise</b> e que a alongam sem querer. E o que fazer nos primeiros segundos, passo a passo.</span></div>
+      <div class="brow reveal"><span class="ck">✓</span><span><b>Por que a crise do seu filho não é birra</b>, nem manha, nem falta de limite. E por que tratar como birra piora.</span></div>
+      <div class="brow reveal"><span class="ck">✓</span><span><b>Os 4 pilares invisíveis que decidem quantas crises por semana.</b> Quando os 4 funcionam em casa, a frequência cai sozinha.</span></div>
+      <div class="brow reveal"><span class="ck">✓</span><span><b>Por que a sua calma é o “segundo cérebro”</b> que seu filho precisa pra se reorganizar.</span></div>
+      <div class="brow reveal"><span class="ck">✓</span><span><b>A ordem certa de buscar profissionais</b> e por onde começar quando o dinheiro aperta.</span></div>
+      <div class="brow reveal"><span class="ck">✓</span><span><b>O script de conversa com a escola</b> antes do ano começar.</span></div>
+      <div class="brow reveal"><span class="ck">✓</span><span><b>O capítulo que é pra VOCÊ:</b> exaustão do cuidador, o casamento, e como não se perder no processo.</span></div>
+      <div class="brow reveal"><span class="ck">✓</span><span><b>A verdade sobre o futuro do seu filho,</b> sem promessa vazia de cura.</span></div>
+    </div>
+    <div class="gift reveal">
+      <span class="tag">Uma ferramenta de presente, agora mesmo</span>
+      <p>Na crise, o cérebro racional do seu filho está desligado. Por isso falar, explicar ou repreender não funciona. O que funciona é o oposto do que o instinto pede: abaixe a voz, reduza tudo a três palavras (<em>“estou aqui, vai passar”</em>), tire estímulos e deixe a tempestade passar. Sua calma é a única coisa que o sistema nervoso dele consegue copiar.</p>
+      <p class="kick">Isso foi um parágrafo. O guia inteiro tem 7 capítulos assim.</p>
+    </div>
+    <div class="ctablock center"><a href="https://checkout.ticto.app/O7000855D" class="cta" style="max-width:460px;margin:0 auto">Quero tudo isso por R$ 47</a></div>
+  </div>
+</section>
+
+<!-- O DEPOIS -->
+<section>
+  <div class="wrap center">
+    <p class="label reveal">o depois</p>
+    <h2 class="reveal" style="margin:8px 0 22px;font-weight:350">Não te prometo outro filho. Te prometo outra você.</h2>
+    <div class="reveal" style="text-align:left">
+      <p>Imagina a próxima crise. A de sempre. Mas dessa vez você não congela: sabe o que fazer nos primeiros segundos, faz, e a tempestade dura metade. E nessa noite você deita tranquila, porque pela primeira vez fez o certo.</p>
+      <p>Imagina sentar pra ensinar algo pra ele e, dessa vez, dar certo. Não porque ele mudou da noite pro dia. Porque você deixou de estar de mãos vazias.</p>
+      <p style="margin:0">É isso que tem do outro lado dessas páginas. Não uma cura. Algo mais honesto e mais útil: <strong>uma mãe que finalmente sabe o que fazer.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- OFERTA STACK -->
+<section class="bg-warm">
+  <div class="wrap">
+    <p class="label center reveal">a oferta completa</p>
+    <h2 class="center reveal" style="margin:8px 0 18px">Três materiais. Um pacote. Autonomia real em casa.</h2>
+    <div class="center reveal" style="margin-bottom:20px"><img src="mockup-conjunto.png" alt="Caminho Atípico e 2 bônus" style="width:100%;max-width:400px;filter:drop-shadow(0 18px 34px rgba(42,37,32,.26))"></div>
+    <div class="stack reveal">
+      <div class="sitem"><div><div class="scat">▸ Material principal</div><h3>Guia Caminho Atípico</h3><p>O guia completo, nas 7 etapas que seguem a jornada que você está vivendo. Do diagnóstico ao futuro.</p></div><div class="sval">R$ 197</div></div>
+      <div class="sitem"><div><div class="scat">▸ Bônus 1</div><h3>Atividades Diárias</h3><p>Atividades práticas pra aplicar em casa, do jeito certo, desde hoje.</p></div><div class="sval">R$ 67</div></div>
+      <div class="sitem"><div><div class="scat">▸ Bônus 2</div><h3>Quadro de Rotina Visual</h3><p>Pronto pra imprimir. Antecipa o dia, organiza a sequência, reduz crises de transição.</p></div><div class="sval">R$ 47</div></div>
+      <div class="stotal"><span>Valor total</span><span><s>R$ 311</s></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PREÇO -->
+<section class="bg-dark" id="preco">
+  <div class="wrap center">
+    <p class="label reveal" style="color:var(--gold-soft)">o investimento</p>
+    <h2 class="reveal" style="margin:8px 0 18px">O pacote completo, na sua mão hoje.</h2>
+    <p class="reveal" style="color:rgba(250,246,240,.85)">Uma única consulta com profissional especializado custa, em média, entre R$ 250 e R$ 500. Hoje você não investe R$ 311. Nem R$ 197. Nem R$ 97. Nem R$ 67.</p>
+    <div class="price-num reveal">R$ 47</div>
+    <p class="reveal" style="color:rgba(250,246,240,.78);margin-top:4px">ou <strong style="color:var(--gold-soft)">9x de R$ 6,17</strong> no cartão · acesso imediato</p>
+    <p class="reveal" style="color:var(--gold-soft);font-weight:700;font-size:.9rem;margin-top:10px">Preço de lançamento. Sobe quando fechar as primeiras 100 famílias.</p>
+    <div class="reveal">
+      <p class="compare">Menos de <strong>R$ 7 por mês.</strong></p>
+      <p class="compare">Menos que <strong>um lanche no fim de semana.</strong></p>
+      <p class="compare">Menos que <strong>uma consulta avulsa.</strong></p>
+    </div>
+    <div class="seals reveal">
+      <span class="seal">🔒 Compra segura</span><span class="seal">⚡ Acesso imediato</span><span class="seal">💳 Parcela no cartão</span><span class="seal">↩️ Garantia 7 dias</span>
+    </div>
+    <div class="ctablock reveal"><a href="https://checkout.ticto.app/O7000855D" class="cta" style="background:var(--gold-soft);color:var(--text)">Quero o Caminho Atípico por R$ 47 <small style="color:var(--text)">9x de R$ 6,17 · acesso imediato</small></a></div>
+    <div class="guarantee reveal">
+      <p style="margin-bottom:8px"><b>Garantia ridícula de 7 dias.</b></p>
+      <p style="margin:0">Você não precisa nem terminar de ler. Lê uma página, lê duas. Se a primeira não te tocar, me escreve. Devolvo seu dinheiro até a última moeda. Sem questionário, sem cara feia. O risco é todo meu.</p>
+    </div>
+  </div>
+</section>
+
+<!-- AUTORIDADE -->
+<section>
+  <div class="wrap">
+    <p class="label center reveal">quem está por trás</p>
+    <h2 class="center reveal" style="margin:8px 0 22px">Nathiely Carvalho</h2>
+    <div class="author reveal">
+      <img src="nathiely.jpg" alt="Nathiely Carvalho">
+      <p>Psicóloga há <strong>10 anos</strong> com crianças atípicas. Pós-graduação em <strong>Análise do Comportamento Aplicada (ABA)</strong>, a abordagem com mais evidência científica para o espectro. <strong>Avaliadora certificada ABLLS e VB-MAPP.</strong></p>
+      <p style="margin:0">Atua em espaço dedicado exclusivamente a <strong>crianças autistas nível 2 e 3 de suporte</strong>, os casos mais difíceis, onde a maioria dos profissionais não atende. Foi ali que ela aprendeu o que reuniu neste material.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTO -->
+<section class="bg-warm">
+  <div class="wrap">
+    <p class="label center reveal">o que as mães falam</p>
+    <h2 class="center reveal" style="margin:8px 0 22px">Você não precisa acreditar só em mim.</h2>
+    <div class="tcard reveal">
+      <div class="stars">★★★★★</div>
+      <p style="margin-top:8px">O acompanhamento da minha filha com a Nathiely foi de grande valia. Minha filha conseguiu superar seus medos e vencer desafios. Tudo foi abordado de maneira suave e responsável, o que foi fundamental pra ela crescer forte, determinada e resolvida. Hoje é uma menina inteligente, que conhece o respeito, a honestidade e o amor próprio. Agradeço a essa profissional tão dedicada.</p>
+      <div class="who">Ana Tereza<small>Mãe · sobre o acompanhamento da filha com a Nathiely</small></div>
+    </div>
+    <!-- Adicione mais .tcard aqui conforme receber novos depoimentos (de preferência prints reais). -->
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap">
+    <h2 class="center reveal" style="margin-bottom:24px">Perguntas que talvez você esteja se fazendo</h2>
+    <div class="faq reveal">
+      <details><summary>Como e quando eu recebo o material?</summary><div class="ans">Na hora. Assim que o pagamento é confirmado, o material chega no seu e-mail e você lê no celular, tablet ou computador.</div></details>
+      <details><summary>Serve se meu filho tem TDAH ou dislexia, não autismo?</summary><div class="ans">Serve. O guia cobre os quatro diagnósticos que mais chegam: autismo, TDAH, dislexia e TOD. As ferramentas (rotina, crise, regulação, escola) valem pra qualquer criança neurodivergente.</div></details>
+      <details><summary>Preciso entender de psicologia pra ler?</summary><div class="ans">Não. É escrito de mãe pra mãe, em linguagem humana, mesmo sendo baseado em evidência clínica.</div></details>
+      <details><summary>O pagamento é seguro? Posso parcelar?</summary><div class="ans">Sim. Pagamento processado em ambiente seguro, com opção de parcelar no cartão. Você também pode pagar via Pix ou boleto.</div></details>
+      <details><summary>E se não funcionar pra mim?</summary><div class="ans">Você tem 7 dias de garantia total. Se o material não te tocar, me escreve e devolvo seu dinheiro. Sem pergunta. O risco é todo meu.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- PS -->
+<section class="bg-warm">
+  <div class="wrap">
+    <h2 class="reveal" style="font-weight:350;font-style:italic;margin-bottom:16px">P.S. Eu sei o que tá te segurando.</h2>
+    <div class="reveal">
+      <p>Não é R$ 47. R$ 47 você gasta sem pensar. É o medo de que mais um material não funcione contigo. Aquela voz que diz <em>“comigo é diferente, comigo nada pega.”</em></p>
+      <p>Se essa página fosse R$ 1.000, eu entenderia a dúvida. Mas é <strong>R$ 47</strong>, e você tem <strong>7 dias</strong> pra ler e pedir o dinheiro de volta. Então a pergunta não é se vale o risco. <strong>O risco não existe.</strong></p>
+      <p style="margin:0">A próxima crise vai acontecer. A próxima noite acordada vai acontecer. Você vai chegar nelas de mãos vazias? Ou com 10 anos de prática clínica dentro da sua casa?</p>
+      <p style="font-family:'Fraunces',serif;font-style:italic;color:var(--accent);margin-top:18px">Com carinho de quem entende,<br>Nathiely Carvalho</p>
+    </div>
+    <div class="ctablock center"><a href="https://checkout.ticto.app/O7000855D" class="cta" style="max-width:460px;margin:0 auto">Quero começar agora por R$ 47</a></div>
+  </div>
+</section>
+
+<footer style="background:var(--bg-dark);color:rgba(250,246,240,.6);text-align:center;padding:40px 20px;font-size:.82rem">
+  <p style="margin:0 0 6px">Nathiely Carvalho · Todos os direitos reservados © 2026</p>
+  <p style="margin:0">Este material não substitui acompanhamento profissional individualizado.</p>
+</footer>
+
+<!-- STICKY -->
+<div class="sticky" id="sticky">
+  <div class="sp"><b>R$ 47</b> <s>R$ 311</s><br>ou 9x de R$ 6,17</div>
+  <a href="https://checkout.ticto.app/O7000855D" class="cta">Quero agora →</a>
+</div>
+
+<script>
+(function(){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  var bar=document.getElementById('sticky'),hero=document.querySelector('.hero'),preco=document.getElementById('preco');
+  function upd(){if(window.innerWidth>720){bar.classList.remove('show');return;}var ph=hero.getBoundingClientRect().bottom<0;var ap=preco.getBoundingClientRect().top<window.innerHeight&&preco.getBoundingClientRect().bottom>0;if(ph&&!ap){bar.classList.add('show');}else{bar.classList.remove('show');}}
+  window.addEventListener('scroll',upd,{passive:true});window.addEventListener('resize',upd);upd();
+})();
+</script>
+</body>
+</html>
