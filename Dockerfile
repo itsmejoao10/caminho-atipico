@@ -1,8 +1,8 @@
 FROM nginx:alpine
 
-COPY caminho-atipico.html /usr/share/nginx/html/index.html
+COPY caminho-atipico-dr.html /usr/share/nginx/html/index.html
 COPY nginx.conf /etc/nginx/conf.d/default.conf
-COPY nathiely-consultorio.webp /usr/share/nginx/html/nathiely-consultorio.webp
-COPY nathiely-consultorio.jpg /usr/share/nginx/html/nathiely-consultorio.jpg
+COPY mockup-conjunto.webp /usr/share/nginx/html/mockup-conjunto.webp
+COPY nathiely.webp /usr/share/nginx/html/nathiely.webp
 
 EXPOSE 80
